@@ -11,7 +11,7 @@ file.close
 
 ## Chave de descriptografia
 key = b'testeransomware'
-aes - pyaes.AESModeOfOperationCTR(key)
+aes = pyaes.AESModeOfOperationCTR(key)
 decrypt_data = aes.decrypt(file)
 
 ## Remover o arquivo criptografado
