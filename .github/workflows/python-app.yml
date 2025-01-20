@@ -20,7 +20,11 @@ jobs:
         cat teste.txt
         chmod +x decrypter.py 
         chmod +x encrypter.py
+        echo 'criptografando arquivo'
         python3 encrypter.py
+        echo 'lendo arquivo criptografado'
         cat teste.txt.encrypt
+        echo 'descriptografando arquivo'
         python3 decrypter.py
+        echo 'lendo arquivo descriptografado'
         cat teste.txt
