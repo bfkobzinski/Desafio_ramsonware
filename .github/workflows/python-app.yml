@@ -18,6 +18,7 @@ jobs:
         cat teste.txt
         chmod +x decrypter.py 
         chmod +x encrypter.py
-        pip encrypter.py
+        python3 encrypter.py
         cat teste.txt
-        pip decrypter.py
+        python3 decrypter.py
+        cat teste.txt
