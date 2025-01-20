@@ -21,6 +21,6 @@ jobs:
         chmod +x decrypter.py 
         chmod +x encrypter.py
         python3 encrypter.py
-        cat teste.txt
+        cat teste.txt.encrypt
         python3 decrypter.py
         cat teste.txt
