@@ -17,11 +17,13 @@ jobs:
         pip install pyaes
     - name: Test Execution
       run: |
+        ls -lah
         cat teste.txt
         chmod +x decrypter.py 
         chmod +x encrypter.py
         echo 'criptografando arquivo'
         python3 encrypter.py
+        ls -lah
         echo 'lendo arquivo criptografado'
         cat teste.txt.encrypt
         echo 'descriptografando arquivo'
