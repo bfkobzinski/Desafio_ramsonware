@@ -13,7 +13,7 @@ file.close()
 os.remove(file_name)
 
 # Definir chave de encriptacao
-key = b"123456789asdfgzxcvb"
+key = b"0123456789abcdef"
 aes = pyaes.AESModeOfOperationCTR(key)
 
 # Criptogafa o arquivo
