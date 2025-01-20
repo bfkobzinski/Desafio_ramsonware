@@ -16,10 +16,8 @@ uses: actions/setup-python@v5
 with:
 # Semantic version range syntax or exact version of a Python version
   python-version: '3.x'
-
 - name: Install AES
 run: pip install aes-encryption
-
 - name: Test Execution
 run: |
 cat teste.txt
