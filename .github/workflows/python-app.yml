@@ -3,21 +3,18 @@ name: Python package
 on: [push]
 
 jobs:
-build:
-
-runs-on: ubuntu-latest
-
-steps:
-- uses: actions/checkout@v4
-
-- name: Set up Python
-# This is the version of the action for setting up Python, not the Python version.
-- uses: actions/setup-python@v5
-- name: Install AES
-  run: pip install aes-encryption
-- name: Test Execution
-  run: |
-    cat teste.txt
-    pip encrypt.py
-    cat teste.txt
-    pip decrypt.py
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+    # This is the version of the action for setting up Python, not the Python version.
+    - uses: actions/setup-python@v5
+    - name: Install AES
+      run: pip install aes-encryption
+    - name: Test Execution
+      run: |
+        cat teste.txt
+        pip encrypt.py
+        cat teste.txt
+        pip decrypt.py
