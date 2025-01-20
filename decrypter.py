@@ -12,7 +12,7 @@ file.close
 # Chave de descriptografia
 key = b'0123456789abcdef'
 aes = pyaes.AESModeOfOperationCTR(key)
-decrypt_data = aes.decrypt(file)
+decrypt_data = aes.decrypt(file_data)
 
 # Remover o arquivo criptografado
 os.remove(file_name)
