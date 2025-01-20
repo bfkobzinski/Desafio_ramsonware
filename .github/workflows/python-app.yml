@@ -16,7 +16,7 @@ steps:
 - uses: actions/setup-python@v3
 - name: Install dependencies
 run: |
-python3 -m pip install --upgrade pip
+pip install --upgrade pip
 pip install aes-encryption
 - name: Test Execution
 run: |
