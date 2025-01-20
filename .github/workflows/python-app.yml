@@ -5,15 +5,15 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v4
-  - name: Set up Python
-    uses: actions/setup-python@v5
-  - name: Install AES
-    run: pip install aes-encryption
-  - name: Test Execution
-    run: |
-      cat teste.txt
-      pip encrypt.py
-      cat teste.txt
-      pip decrypt.py
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+    - name: Install AES
+      run: pip install aes-encryption
+    - name: Test Execution
+      run: |
+        cat teste.txt
+        pip encrypt.py
+        cat teste.txt
+        pip decrypt.py
