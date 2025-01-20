@@ -14,6 +14,8 @@ jobs:
     - name: Test Execution
       run: |
         cat teste.txt
-        pip encrypt.py
+        chmod +x decrypter.py 
+        chmod +x encrypter.py
+        pip encrypter.py
         cat teste.txt
-        pip decrypt.py
+        pip decrypter.py
